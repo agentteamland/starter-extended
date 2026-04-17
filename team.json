@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "name": "starter-extended",
+  "version": "0.1.0",
+  "description": "Example team demonstrating inheritance: extends software-project-team, adds stripe-agent, excludes ux-agent.",
+  "author": {
+    "name": "AgentTeamLand",
+    "url": "https://github.com/agentteamland"
+  },
+  "license": "MIT",
+  "keywords": ["example", "inheritance", "starter", "extends", "demo"],
+  "repository": "https://github.com/agentteamland/starter-extended",
+  "agents": [
+    { "name": "stripe-agent", "description": "Stripe subscription & webhook specialist \u2014 added in this extension" }
+  ],
+  "skills": [],
+  "rules": [],
+  "extends": "software-project-team@^1.0.0",
+  "excludes": ["ux-agent"],
+  "dependencies": {},
+  "requires": {
+    "atl": ">=0.1.0"
+  }
+}
