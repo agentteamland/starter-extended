@@ -1,3 +1,7 @@
+---
+knowledge-base-summary: "Stripe webhooks land at `POST /api/billing/webhooks/stripe`: raw body read, signature verified, Redis SETNX dedup by `event.id`, MediatR dispatch, 200 returned regardless of handler result (failures retried via RMQ DLX, not Stripe retry)."
+---
+
 # Webhook topology
 
 Stripe webhooks go to `POST /api/billing/webhooks/stripe`. The endpoint:
