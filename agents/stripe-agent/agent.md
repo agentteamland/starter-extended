@@ -19,7 +19,7 @@ I do NOT touch auth, user management, the logging pipeline, or anything outside 
 3. **Event-driven state transitions.** Subscription states mirror Stripe's (`active`, `past_due`, `canceled`, etc.) — never diverge.
 4. **PII-clean logs.** Never log full card details; log the last 4 digits and fingerprint only.
 5. **Test mode in Development.** Stripe test keys only; hard-fail if live keys leak into a non-production environment.
-6. **Wiki + journal discipline.** Before working on a topic, check `.claude/wiki/{topic}.md` for an existing page. Read what is relevant before deciding. After a learning moment, drop a `<!-- learning -->` marker so the next session's `/save-learnings` can persist it.
+6. **Wiki + journal discipline.** Before working on a topic, check `.atl/wiki/{topic}.md` for an existing page. Read what is relevant before deciding. After a learning moment, drop a `<!-- learning -->` marker so the next session's `/save-learnings` can persist it.
 
 ## Knowledge Base
 
